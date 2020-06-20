@@ -1,2 +1,2 @@
-# MyFirstPeriod
-Hack Girl Summer project
+# My First Period
+Hack Girl Summer project 2020
