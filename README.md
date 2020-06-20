@@ -1,2 +1,3 @@
-# MyFirstPeriod
-Hack Girl Summer project
+# My First Period
+
+## Hack Girls Summer hack
