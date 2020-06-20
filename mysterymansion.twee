@@ -35,7 +35,6 @@ footer {
 #logo {
   margin-left: 1vw;
   margin-top: -1vw;
-
 }
 
 
@@ -68,7 +67,8 @@ tw-sidebar {
   #logo {
 	float: left;
     margin-left: -48vw;
-    margin-top: -12em;
+    margin-top: -10em;
+  width: 30%;
   }
 
   footer {
@@ -114,39 +114,39 @@ Beyonce’s friend said to talk to her [[mom|talktomom]].
 
 
 :: talktomom {"position":"476,700","size":"100,100"}
-Here, let’s talk about [[what menstruation is|about]]. We’ll talk about [[how often]] you’ll get it, some [[products]] you will need to use and how you can [[take care of yourself]] while you’re on your period.
+Here, let’s talk about what menstruation is. We’ll talk about how often you’ll get it, some products you will need to use and how you can take care of yourself while you’re on your period.
+[[Let's go!|about]]
 
 <script>changeImage("talktomom")</script>
 
 
 :: about {"position":"500,876","size":"100,100"}
-A grand foyer, with a spiral staircase. The whole thing is covered in a fine layer of dust.
-
-<script>changeImage("foyer")</script>
-
+[[Now let me explain how often you'll get it.|how often]]
+<script>changeImage("talktomom")</script>
 
 :: how often {"position":"365,411","size":"100,100"}
-A 
-
-<script>changeImage("porch")</script>
-
+[[Let's talk about the products you'll use.|products]]
+<script>changeImage("talktomom")</script>
 
 :: products {"position":"620,559","size":"100,100"}
-The 
-
-<script>changeImage("frontdoor")</script>
+[[How to take care during this time?|take care of yourself]]
+<script>changeImage("talktomom")</script>
 
 :: take care of yourself {"position":"380,559","size":"100,100"}
-They're 
-
-<script>changeImage("frontdoor")</script>
+[[We're done!|final]]
+<script>changeImage("talktomom")</script>
 
 :: Image [header] {"position":"900,125","size":"100,100"}
-<h1>Welcome to the Azure Mystery Mansion</h1>
+<h1>My First Period</h1>
 <img id="image" alt="Illustration of the scene being described in the game"/>
 
 :: logo [header] {"position":"396,146","size":"100,100"}
 <img id="logo" alt="My First Period logo" />
 <script>loadLogo()</script>
 
-
+:: final{"position":"500,600","size":"100,100"}
+Here are some other resources:
+<a href="https://www.plannedparenthood.org/learn/health-and-wellness/menstruation">What is menstruation?</a>
+<a href="https://kidshealth.org/en/teens/menstruation.html">All About Periods (for Teens)</a>
+<a href="https://www.webmd.com/women/normal-period">What's a Normal Menstrual Period?</a>
+<script>changeImage("last")</script>
