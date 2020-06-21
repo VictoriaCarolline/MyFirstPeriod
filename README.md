@@ -1,3 +1,2 @@
 # My First Period
-
-## Hack Girls Summer hack
+## Hack Girls Summer project 2020
