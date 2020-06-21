@@ -1,0 +1,152 @@
+:: StoryTitle
+My First Period
+
+
+:: StoryData
+{
+	"ifid": "89A5D9EC-3A86-4346-AEFD-080DA5AC7F04",
+	"format": "Harlowe",
+	"format-version": "3.1.0",
+	"start": "Home",
+	"zoom": 1
+}
+
+
+:: Story Stylesheet [stylesheet]
+h1 {
+  font-size: 2.25em; 
+}
+
+footer {
+  margin: auto;
+  margin-top: 10em;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+#image {
+  margin-left: 1vw;
+  width: 100%;
+}
+#logo {
+  margin-left: 1vw;
+  margin-top: -1vw;
+}
+
+
+tw-link::selection {
+	background: none;
+}
+
+tw-story {
+  padding: 5% 3% !important;
+  font-family: 'Segoe UI';
+  background-color: white;
+  color: black;
+}
+
+tw-sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  tw-passage {
+    margin-left: 46vw;
+  }
+  
+  #image {
+    float: left;
+    margin-left: -43vw;
+	width: 40vw;
+	}
+  
+  #logo {
+	float: left;
+    margin-left: -48vw;
+    margin-top: -10em;
+  width: 30%;
+  }
+
+  footer {
+	margin-left: -44vw;
+}
+
+
+:: Story JavaScript [script]
+document.body.setAttribute('lang', 'en')
+
+window.changeImage = function (image) {
+		if (!image) {
+			console.log("Unsetting image")
+			document.getElementById("image").style.visibility = "hidden";
+			return
+		}
+	
+    console.log("Changing image to " + image);
+    document.getElementById("image").src = "./images/" + image + ".jpg";
+    document.getElementById("image").style.visibility = "visible";
+}
+
+window.loadLogo = function () {
+    document.getElementById("logo").src = "./images/logo.jpg";
+} 
+
+:: Home {"position":"575,250","size":"100,100"}
+Huh? I feel something weird… I better get home to [[check it out|gohome]].
+
+<script>changeImage("bicycle")</script>
+
+
+:: gohome {"position":"500,401","size":"100,100"}
+Uh-oh, what is this!? Why is there blood on my pants/underwear? Should I talk to [[my friends|talktofriends]] or [[my mom|talktomom]]?
+
+<script>changeImage("bathroom")</script>
+
+
+:: talktofriends {"position":"500,549","size":"100,100"}
+Beyonce’s friend said to talk to her [[mom|talktomom]].
+
+<script>changeImage("talktofriends")</script>
+
+
+:: talktomom {"position":"476,700","size":"100,100"}
+Here, let’s talk about what menstruation is. We’ll talk about how often you’ll get it, some products you will need to use and how you can take care of yourself while you’re on your period.
+[[Let's go!|how often]]
+
+<script>changeImage("talktomom")</script>
+
+
+:: how often {"position":"365,411","size":"100,100"}
+A menstruation cycle ins't the same for all women. However, it usually lasts form 1 to 7 days and occurs every 21 to 35 days.  
+[[Let's talk about the products you'll use.|products]]
+<script>changeImage("talktomom")</script>
+
+:: products {"position":"620,559","size":"100,100"}
+Some products you could use include pad, tampon or menstrual cup. They help soak up blood and should generally be changed every four hours.
+[[How to take care during this time?|take care of yourself]]
+<script>changeImage("talktomom")</script>
+
+:: take care of yourself {"position":"380,559","size":"100,100"}
+When you first get your period, it'll probably feel strange and hurt quite a bit. But, rest assured, there are pain relif medicines that can help. 
+[[We're done!|final]]
+<script>changeImage("talktomom")</script>
+
+:: Image [header] {"position":"900,125","size":"100,100"}
+<h1>My First Period</h1>
+<img id="image" alt="Illustration of the scene being described in the game"/>
+
+:: logo [header] {"position":"396,146","size":"100,100"}
+<img id="logo" alt="My First Period logo" />
+<script>loadLogo()</script>
+
+:: final{"position":"500,600","size":"100,100"}
+Thanks for coming along my journey! Here some other resources to further clarify any doubts. Tune in for more stories, coming in the future!
+Here are some other resources:
+<a href="https://www.plannedparenthood.org/learn/health-and-wellness/menstruation">What is menstruation?</a>
+<a href="https://kidshealth.org/en/teens/menstruation.html">All About Periods (for Teens)</a>
+<a href="https://www.webmd.com/women/normal-period">What's a Normal Menstrual Period?</a>
+<script>changeImage("last")</script>
