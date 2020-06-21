@@ -115,15 +115,10 @@ Beyonce’s friend said to talk to her [[mom|talktomom]].
 
 :: talktomom {"position":"476,700","size":"100,100"}
 Here, let’s talk about what menstruation is. We’ll talk about how often you’ll get it, some products you will need to use and how you can take care of yourself while you’re on your period.
-[[Let's go!|about]]
+[[Let's go!|how often]]
 
 <script>changeImage("talktomom")</script>
 
-
-:: about {"position":"500,876","size":"100,100"}
-A menstruation cycle ins't the same for all women. However, it usually lasts form 1 to 7 days and occurs every 21 to 35 days.  
-[[Now let me explain how often you'll get it.|how often]]
-<script>changeImage("talktomom")</script>
 
 :: how often {"position":"365,411","size":"100,100"}
 A menstruation cycle ins't the same for all women. However, it usually lasts form 1 to 7 days and occurs every 21 to 35 days.  
